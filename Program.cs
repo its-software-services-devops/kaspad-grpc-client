@@ -21,5 +21,4 @@ await messageStream.RequestStream.WriteAsync(getBalanceRequest);
 await messageStream.ResponseStream.MoveNext();
 var response = messageStream.ResponseStream.Current;
 
-Console.WriteLine("UTXOs by address: (Printing only 1 for clarity)");
-Console.WriteLine(response.GetBalanceByAddressResponse.Balance);
+Console.WriteLine("Balance is {0}", response.GetBalanceByAddressResponse.Balance);
