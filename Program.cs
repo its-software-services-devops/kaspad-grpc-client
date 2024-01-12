@@ -21,4 +21,4 @@ await messageStream.RequestStream.WriteAsync(getBalanceRequest);
 await messageStream.ResponseStream.MoveNext();
 var response = messageStream.ResponseStream.Current;
 
-Console.WriteLine("Balance is {0}", response.GetBalanceByAddressResponse.Balance);
+Console.WriteLine("Balance is [{0}]", response.GetBalanceByAddressResponse.Balance);
